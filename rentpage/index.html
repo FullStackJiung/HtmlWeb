@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueris.css">
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">98 Jones Ave.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#events">Event</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">98 Jones ave.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#feature" onclick="toggleMenu()">feature</a></li>
+                <li><a href="#events" onclick="toggleMenu()">Event</a></li>
+                <li><a href="#reviews" onclick="toggleMenu()">Reviews</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="98 Jhones ave picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, here is</p>
+            <h1 class="title">Heaven</h1>
+            <p class="section__text__p2">98 Jones ave.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('https://www.google.com/maps/place/98+Jones+Ave,+Toronto,+ON+M4M+2Z8/@43.6652992,-79.3367228,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb829247ddeb:0xc3406739dda60892!8m2!3d43.6652953!4d-79.3341479!16s%2Fg%2F11c1dyk9zj?hl=ko&entry=ttu')">
+                    location</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/phonecall.png" alt="Phonecall icon" class="icon"
+                    onclick="location.href='https://naver.com/'" />
+                <img src="./assets/katalk.png" alt="KaKao talk icon" class="icon"
+                    onclick="location.href='https://naver.com/'" />
+                <img src="./assets/insta.png" alt="insta icon" class="icon"
+                    onclick="location.href='https://naver.com/'" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To know More</p>
+        <h1 class="title">About house</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/entrance.png" alt="entrance picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/user.png" alt="feature icon" class="icon">
+                        <h3>Single Rooms</h3>
+                        <p>$9999 <br> <br>private</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="feature icon" class="icon">
+                        <h3>Double Rooms</h3>
+                        <p>$999<br>with <br>room mates</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit tempora totam dolorem tempore optio
+                        enim aliquam commodi at quisquam adipisci mollitia nisi, minus maxime distinctio, dolor amet
+                        temporibus, ex aperiam. Impedit atque officiis perferendis, ullam earum aperiam consequatur
+                        voluptates, corrupti dolor quam placeat. Eaque magnam numquam, quisquam deserunt iusto deleniti?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#feature'">
+    </section>
+
+    <section id="feature">
+        <p class="section__text__p1">Explore house's</p>
+        <h1 class="title">features</h1>
+        <div class="feature-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="feature-sub-title">Location & Accessibility</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/bus.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>720 Spadina ave.</h3>
+
+                                <p>20 mins by bus</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/train-station.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>720 Spadina ave.</h3>
+
+                                <p>10 mins by subway</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/dog-walking.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>720 Spadina ave.</h3>
+
+                                <p>1 min walk</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="feature-sub-title">Residence life</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/couple.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>Best Landlords</h3>
+
+                                <p>in the world</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/5090939.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>Cozy house</h3>
+
+                                <p>Brand new</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/meal.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>Sam si se ki</h3>
+
+                                <p>full dream</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/grill.png" alt="feature icon" class="icon">
+                            <div>
+                                <h3>Barbecue Party</h3>
+
+                                <p>with Chef.Y</p>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#events'">
+    </section>
+
+    <section id="events">
+        <p class="section__text__p1">Enjoy the</p>
+        <h1 class="title">Events</h1>
+        <div class="feature-details-container">
+            <div class="about-containers">
+                <div class="details-container  color-container">
+                    <div class="article-container">
+                        <img src="./assets/bbq.jpg" alt="event 1" class="event-img">
+                    </div>
+                    <h2 class="feature-sub-title event-title">Are you with me?</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 event-btn"
+                            onclick="location.href='https://www.buymeacoffee.com/jagarikosud'">Yeah</button>
+                        <button class="btn btn-color-2 event-btn"
+                            onclick="location.href='https://www.buymeacoffee.com/jagarikosud'">
+                            Yes</button>
+                    </div>
+                </div>
+
+                <div class="details-container  color-container">
+                    <div class="article-container">
+                        <img src="./assets/bbq2.jpg" alt="event 1" class="event-img">
+                    </div>
+                    <h2 class="feature-sub-title event-title">Are you with me?</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 event-btn"
+                            onclick="location.href='https://www.buymeacoffee.com/jagarikosud'">Yeah</button>
+                        <button class="btn btn-color-2 event-btn"
+                            onclick="location.href='https://www.buymeacoffee.com/jagarikosud'">
+                            Yes</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#reviews'">
+    </section>
+
+    <section id="reviews">
+        <p class="section__text__p1">students</p>
+        <h1 class="title">Reviews</h1>
+        <div class="feature-details-container">
+            <div class="about-containers">
+                <div class="details-container  color-container">
+                    <ul id="guestbook-list">
+                    </ul>
+                    <br>
+                    <hr>
+                    <br>
+                    <form id="guestbook-form">
+                        name : <input type="text" id="name"><br>
+                        comment: <textarea id="message"></textarea><br>
+                        <br>
+                        <button class="btn btn-color-2 messegebtn" onclick="submitMessage()">submit</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/gmail.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:raffineko@gmail.com">pisidda@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/katalk.png" alt="kakaotalk icon" class="icon contact-icon">
+                <p><a href="https://www.naver.com">open Kakaotalk</a></p>
+            </div>
+
+        </div>
+        
+    </section>
+    <button id="goTopBtn" onclick="goToTop()">Go to top</button>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#feature">Feature</a></li>
+                    <li><a href="#events">Event</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p> &#169; 2023 Jonathan.Y </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
