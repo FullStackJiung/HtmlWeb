@@ -98,3 +98,29 @@ function goToTop() {
     document.body.scrollTop = 0; // Safari 브라우저를 위한 코드
     document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera를 위한 코드
 }
+
+// translate
+let currentLanguage = 'EN';
+
+function switchLanguage() {
+    if (currentLanguage === 'EN') {
+        currentLanguage = 'KR';
+        document.getElementById('langSwitchBtn').innerText = 'KOREAN';
+        
+        document.querySelector('.section__text__p1.lang:nth-of-type(1)').innerText = '더 알아보기';
+        document.querySelector('.title.lang:nth-of-type(1)').innerText = '집에 대해';
+        document.querySelector('.section__text__p1.lang:nth-of-type(2)').innerText = '집의';
+        document.querySelector('.title.lang:nth-of-type(2)').innerText = '특징들';
+        document.querySelector('.section__text__p1.lang:nth-of-type(3)').innerText = '즐겨보세요';
+
+    } else {
+        currentLanguage = 'EN';
+        document.getElementById('langSwitchBtn').innerText = 'ENGLISH';
+        
+        document.querySelector('.section__text__p1.lang:nth-of-type(1)').innerText = 'Get To know More';
+        document.querySelector('.title.lang:nth-of-type(1)').innerText = 'About house';
+        document.querySelector('.section__text__p1.lang:nth-of-type(2)').innerText = 'Explore houses';
+        document.querySelector('.title.lang:nth-of-type(2)').innerText = 'features';
+        document.querySelector('.section__text__p1.lang:nth-of-type(3)').innerText = 'Enjoy the';
+    }
+}

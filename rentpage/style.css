@@ -473,6 +473,18 @@ article .icon {
  height: 2rem;
 }
 /* GO TO TOP */
+#langSwitchBtn{
+
+    border: none;
+    outline: none;
+    background-color: #000;
+    opacity: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    font-size: large;
+}
 #goTopBtn {
     display: none; /* 기본적으로 버튼을 숨김 */
     position: fixed; /* 화면에 고정된 위치로 설정 */
@@ -502,4 +514,13 @@ footer {
 
 footer p{
     text-align: center;
+}
+
+#buttonContainer {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column; /* 버튼들을 수직으로 배열 */
+    gap: 10px; /* 버튼 사이의 간격 */
 }
